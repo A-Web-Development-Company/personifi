@@ -5,11 +5,13 @@ import Login from './Login/Login';
 import Signup from './Signup/Signup';
 import { Header } from './Header/Header';
 import ProtectedRoute from '../routes/ProtectedRoute';
+import { Navigation } from './Navigation/Navigation';
 
 export const App = () => {
   return (
     <BrowserRouter>
       <Header />
+      <Navigation />
       <Routes>
         <Route
           path="/"
